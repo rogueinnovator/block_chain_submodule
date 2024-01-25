@@ -1,0 +1,413 @@
+{
+  "contractName": "simpleStore",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "Dnumber",
+          "type": "uint256"
+        }
+      ],
+      "name": "Alternum",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"Dnumber\",\"type\":\"uint256\"}],\"name\":\"Alternum\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/TodoList.sol\":\"simpleStore\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/TodoList.sol\":{\"keccak256\":\"0x58fb1d79f119f27db711d7e1fe16839c3578e9159361a2fd9bc7878270eb71f4\",\"urls\":[\"bzz-raw://917db50b233a5742c1c616e36c4a83742824a71ebba3deca470d2313973c397b\",\"dweb:/ipfs/QmSmUwGBior3ZsgCgeskdj5qG18pM9x7oPwhmzqnHd7Mr5\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b5060838061001e6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c8063bb4b135514602d575b600080fd5b604760048036036020811015604157600080fd5b50356049565b005b60005556fea265627a7a723158208316b1a62ebdabdffe194b5164e0c01548206d8caee21390f4a442207a8b9bf164736f6c63430005100032",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c8063bb4b135514602d575b600080fd5b604760048036036020811015604157600080fd5b50356049565b005b60005556fea265627a7a723158208316b1a62ebdabdffe194b5164e0c01548206d8caee21390f4a442207a8b9bf164736f6c63430005100032",
+  "sourceMap": "57:128:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;57:128:0;;;;;;;",
+  "deployedSourceMap": "57:128:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;57:128:0;;;;;;;;;;;;;;;;;;;108:75;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;108:75:0;;:::i;:::-;;;155:14;:24;108:75::o",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.5.16;\ncontract simpleStore{\n    uint256 favoriteNumber;\n function Alternum(uint256 Dnumber) public{\n    favoriteNumber = Dnumber;\n }\n}\n// contract TodoList {\n//     uint taskCount = 0;\n//     struct Task {\n//         uint id;\n//         string content;\n//         bool completed;\n//     }\n//     mapping(uint => Task) public task; //this is used to map the each task with its count the unit take the count of the task and map it to the task which is a structue having ID ,CONTENT and a boolen tag which specify that weather the task is compleated or not ..\n// //in simple maping is used to map two variable (key_value pairs)  \n//     constructor() public {\n//         createTask(\"this is huzaifa\");\n//     }\n\n//     function createTask(string memory _content) public {\n//         taskCount++;\n//         task[taskCount] = Task(taskCount, _content, false);\n//     }\n// }\n// // Storage: This is the most permanent storage location and is used for state variables. State variables are stored on the Ethereum blockchain and retain their values across function calls and transactions. They are used to represent the persistent state of a smart contract.\n\n// // Memory: This storage location is temporary and used for function arguments and variables within function scope. Memory is used for data that should not persist beyond the execution of the function. It's often used for parameters and variables within the function.\n\n// // Stack: The stack is used for small, local variables. It's the least used storage location and is primarily for very short-term data storage. It's not typically used in the context of data passed between external function calls.\n",
+  "sourcePath": "/home/rogue/Desktop/FYP/Eth-todo-list/contracts/TodoList.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/TodoList.sol",
+    "exportedSymbols": {
+      "simpleStore": [
+        14
+      ]
+    },
+    "id": 15,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".16"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:24:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 14,
+        "linearizedBaseContracts": [
+          14
+        ],
+        "name": "simpleStore",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 3,
+            "name": "favoriteNumber",
+            "nodeType": "VariableDeclaration",
+            "scope": 14,
+            "src": "83:22:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 2,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "83:7:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 12,
+              "nodeType": "Block",
+              "src": "149:34:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 10,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 8,
+                      "name": "favoriteNumber",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3,
+                      "src": "155:14:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 9,
+                      "name": "Dnumber",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5,
+                      "src": "172:7:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "155:24:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 11,
+                  "nodeType": "ExpressionStatement",
+                  "src": "155:24:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 13,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "Alternum",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5,
+                  "name": "Dnumber",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13,
+                  "src": "126:15:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 4,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "126:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "125:17:0"
+            },
+            "returnParameters": {
+              "id": 7,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "149:0:0"
+            },
+            "scope": 14,
+            "src": "108:75:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 15,
+        "src": "57:128:0"
+      }
+    ],
+    "src": "32:1674:0"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/TodoList.sol",
+      "exportedSymbols": {
+        "simpleStore": [
+          14
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.5",
+            ".16"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "32:24:0"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            14
+          ],
+          "name": "simpleStore",
+          "scope": 15
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "name": "favoriteNumber",
+              "scope": 14,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint256",
+                  "type": "uint256"
+                },
+                "id": 2,
+                "name": "ElementaryTypeName",
+                "src": "83:7:0"
+              }
+            ],
+            "id": 3,
+            "name": "VariableDeclaration",
+            "src": "83:22:0"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "Alternum",
+              "scope": 14,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "Dnumber",
+                      "scope": 13,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 4,
+                        "name": "ElementaryTypeName",
+                        "src": "126:7:0"
+                      }
+                    ],
+                    "id": 5,
+                    "name": "VariableDeclaration",
+                    "src": "126:15:0"
+                  }
+                ],
+                "id": 6,
+                "name": "ParameterList",
+                "src": "125:17:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 7,
+                "name": "ParameterList",
+                "src": "149:0:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 3,
+                              "type": "uint256",
+                              "value": "favoriteNumber"
+                            },
+                            "id": 8,
+                            "name": "Identifier",
+                            "src": "155:14:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 5,
+                              "type": "uint256",
+                              "value": "Dnumber"
+                            },
+                            "id": 9,
+                            "name": "Identifier",
+                            "src": "172:7:0"
+                          }
+                        ],
+                        "id": 10,
+                        "name": "Assignment",
+                        "src": "155:24:0"
+                      }
+                    ],
+                    "id": 11,
+                    "name": "ExpressionStatement",
+                    "src": "155:24:0"
+                  }
+                ],
+                "id": 12,
+                "name": "Block",
+                "src": "149:34:0"
+              }
+            ],
+            "id": 13,
+            "name": "FunctionDefinition",
+            "src": "108:75:0"
+          }
+        ],
+        "id": 14,
+        "name": "ContractDefinition",
+        "src": "57:128:0"
+      }
+    ],
+    "id": 15,
+    "name": "SourceUnit",
+    "src": "32:1674:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.16",
+  "updatedAt": "2024-01-25T17:07:29.201Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
