@@ -1,0 +1,222 @@
+{
+    "contractName": "CriminalDataSender",
+    "abi": [
+        {
+            "inputs": [],
+            "name": "DataCount",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.8.8+commit.dddeac2f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"DataCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/home/rogue/Desktop/FYP/THE-FYP/Block-Chain/contracts/CriminalDataSender.sol\":\"CriminalDataSender\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/rogue/Desktop/FYP/THE-FYP/Block-Chain/contracts/CriminalDataSender.sol\":{\"keccak256\":\"0x191b7de040effcce7f1700c24d5b7154d134ec98c30deabaef762bde536318c0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://13661bd0f362b8752c1715c669fd6fc8b42007b8805180a7052ef1c05ed9cc10\",\"dweb:/ipfs/QmS822CffkLah1QnhLr3s8AC4HUuhDVvYcxybvTDu6vFKQ\"]}},\"version\":1}",
+    "bytecode": "608060405260008055348015601357600080fd5b50607d806100226000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c806330e6e05c14602d575b600080fd5b603560005481565b60405190815260200160405180910390f3fea26469706673582212208f282327c35afd32f06335d99a43986d5d97031c31fb25c4a1090821e5cfcb7d64736f6c63430008080033",
+    "deployedBytecode": "6080604052348015600f57600080fd5b506004361060285760003560e01c806330e6e05c14602d575b600080fd5b603560005481565b60405190815260200160405180910390f3fea26469706673582212208f282327c35afd32f06335d99a43986d5d97031c31fb25c4a1090821e5cfcb7d64736f6c63430008080033",
+    "sourceMap": "57:149:0:-:0;;;113:1;90:24;;57:149;;;;;;;;;;;;;;;;",
+    "deployedSourceMap": "57:149:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;90:24;;;;;;;;;160:25:1;;;148:2;133:18;90:24:0;;;;;;",
+    "sourcePath": "/home/rogue/Desktop/FYP/THE-FYP/Block-Chain/contracts/CriminalDataSender.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.8.8+commit.dddeac2f"
+    },
+    "ast": {
+        "absolutePath": "/home/rogue/Desktop/FYP/THE-FYP/Block-Chain/contracts/CriminalDataSender.sol",
+        "exportedSymbols": {
+            "CriminalDataSender": [
+                12
+            ]
+        },
+        "id": 13,
+        "license": "MIT",
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 1,
+                "literals": [
+                    "solidity",
+                    "^",
+                    "0.8",
+                    ".8"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "33:23:0"
+            },
+            {
+                "abstract": false,
+                "baseContracts": [],
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "fullyImplemented": true,
+                "id": 12,
+                "linearizedBaseContracts": [
+                    12
+                ],
+                "name": "CriminalDataSender",
+                "nameLocation": "66:18:0",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "constant": false,
+                        "functionSelector": "30e6e05c",
+                        "id": 4,
+                        "mutability": "mutable",
+                        "name": "DataCount",
+                        "nameLocation": "102:9:0",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 12,
+                        "src": "90:24:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                        },
+                        "typeName": {
+                            "id": 2,
+                            "name": "uint",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "90:4:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                            }
+                        },
+                        "value": {
+                            "hexValue": "30",
+                            "id": 3,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "number",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "113:1:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_rational_0_by_1",
+                                "typeString": "int_const 0"
+                            },
+                            "value": "0"
+                        },
+                        "visibility": "public"
+                    },
+                    {
+                        "canonicalName": "CriminalDataSender.Criminal_Entity",
+                        "id": 11,
+                        "members": [
+                            {
+                                "constant": false,
+                                "id": 6,
+                                "mutability": "mutable",
+                                "name": "id",
+                                "nameLocation": "157:2:0",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 11,
+                                "src": "152:7:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                },
+                                "typeName": {
+                                    "id": 5,
+                                    "name": "uint",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "152:4:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    }
+                                },
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 8,
+                                "mutability": "mutable",
+                                "name": "name",
+                                "nameLocation": "176:4:0",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 11,
+                                "src": "169:11:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_string_storage_ptr",
+                                    "typeString": "string"
+                                },
+                                "typeName": {
+                                    "id": 7,
+                                    "name": "string",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "169:6:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_storage_ptr",
+                                        "typeString": "string"
+                                    }
+                                },
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 10,
+                                "mutability": "mutable",
+                                "name": "cnic",
+                                "nameLocation": "188:4:0",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 11,
+                                "src": "183:9:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                },
+                                "typeName": {
+                                    "id": 9,
+                                    "name": "uint",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "183:4:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    }
+                                },
+                                "visibility": "internal"
+                            }
+                        ],
+                        "name": "Criminal_Entity",
+                        "nameLocation": "127:15:0",
+                        "nodeType": "StructDefinition",
+                        "scope": 12,
+                        "src": "120:84:0",
+                        "visibility": "public"
+                    }
+                ],
+                "scope": 13,
+                "src": "57:149:0",
+                "usedErrors": []
+            }
+        ],
+        "src": "33:173:0"
+    },
+    "functionHashes": {
+        "DataCount()": "30e6e05c"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "25000",
+            "executionCost": "5081",
+            "totalCost": "30081"
+        },
+        "external": {
+            "DataCount()": "2261"
+        }
+    }
+}

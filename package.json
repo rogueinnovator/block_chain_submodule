@@ -1,14 +1,15 @@
 {
-  "name": "eth-todo-list",
+  "name": "criminal_data_provider",
   "version": "1.0.0",
-  "description": "Blockchain Todo List Powered By Ethereum",
+  "description": "Blockchain criminal data storer",
   "main": "truffle-config.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
     "dev": "lite-server",
-    "test": "echo \"Error: no test specified\" && sexit 1"
+    "test": "echo \"Error: no test specified\" && sexit 1",
+    "ganache": "ganache --wallet.seed myCustomSeed"
   },
   "author": "HUZAIFA",
   "license": "ISC",
@@ -20,7 +21,7 @@
     "lite-server": "^2.6.1",
     "nodemon": "^3.0.1",
     "truffle": "5.11.5",
-    "truffle-contract": "4.0.31"
+    "truffle-contract": "^4.0.31"
   },
   "dependencies": {
     "jquery": "^3.7.1"

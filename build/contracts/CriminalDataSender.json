@@ -1,0 +1,343 @@
+{
+  "contractName": "CriminalDataSender",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "DataCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.8+commit.dddeac2f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"DataCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/CriminalDataSender.sol\":\"CriminalDataSender\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/CriminalDataSender.sol\":{\"keccak256\":\"0xb779d1c0f75904deb756af2751a6a1d958780225cdc602ed324677702b164bce\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7c29bfe95134e5953c32efc391958ae97ebd5c1a1212667eafde9cb36123695c\",\"dweb:/ipfs/QmSvPsAnNqSAsZpe1juWfJaGG1rNVDtiapFLXt2ymjLge9\"]}},\"version\":1}",
+  "bytecode": "0x6080604052600a600055348015601457600080fd5b50607d806100236000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c806330e6e05c14602d575b600080fd5b603560005481565b60405190815260200160405180910390f3fea2646970667358221220f03e0bcb77b8e73037f58ea1cab8d11c477d18f57f1a7a45eb2030505d7138bd64736f6c63430008080033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c806330e6e05c14602d575b600080fd5b603560005481565b60405190815260200160405180910390f3fea2646970667358221220f03e0bcb77b8e73037f58ea1cab8d11c477d18f57f1a7a45eb2030505d7138bd64736f6c63430008080033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [
+    {
+      "ast": {
+        "nodeType": "YulBlock",
+        "src": "0:193:1",
+        "statements": [
+          {
+            "nodeType": "YulBlock",
+            "src": "6:3:1",
+            "statements": []
+          },
+          {
+            "body": {
+              "nodeType": "YulBlock",
+              "src": "115:76:1",
+              "statements": [
+                {
+                  "nodeType": "YulAssignment",
+                  "src": "125:26:1",
+                  "value": {
+                    "arguments": [
+                      {
+                        "name": "headStart",
+                        "nodeType": "YulIdentifier",
+                        "src": "137:9:1"
+                      },
+                      {
+                        "kind": "number",
+                        "nodeType": "YulLiteral",
+                        "src": "148:2:1",
+                        "type": "",
+                        "value": "32"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "add",
+                      "nodeType": "YulIdentifier",
+                      "src": "133:3:1"
+                    },
+                    "nodeType": "YulFunctionCall",
+                    "src": "133:18:1"
+                  },
+                  "variableNames": [
+                    {
+                      "name": "tail",
+                      "nodeType": "YulIdentifier",
+                      "src": "125:4:1"
+                    }
+                  ]
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "name": "headStart",
+                        "nodeType": "YulIdentifier",
+                        "src": "167:9:1"
+                      },
+                      {
+                        "name": "value0",
+                        "nodeType": "YulIdentifier",
+                        "src": "178:6:1"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "mstore",
+                      "nodeType": "YulIdentifier",
+                      "src": "160:6:1"
+                    },
+                    "nodeType": "YulFunctionCall",
+                    "src": "160:25:1"
+                  },
+                  "nodeType": "YulExpressionStatement",
+                  "src": "160:25:1"
+                }
+              ]
+            },
+            "name": "abi_encode_tuple_t_uint256__to_t_uint256__fromStack_reversed",
+            "nodeType": "YulFunctionDefinition",
+            "parameters": [
+              {
+                "name": "headStart",
+                "nodeType": "YulTypedName",
+                "src": "84:9:1",
+                "type": ""
+              },
+              {
+                "name": "value0",
+                "nodeType": "YulTypedName",
+                "src": "95:6:1",
+                "type": ""
+              }
+            ],
+            "returnVariables": [
+              {
+                "name": "tail",
+                "nodeType": "YulTypedName",
+                "src": "106:4:1",
+                "type": ""
+              }
+            ],
+            "src": "14:177:1"
+          }
+        ]
+      },
+      "contents": "{\n    { }\n    function abi_encode_tuple_t_uint256__to_t_uint256__fromStack_reversed(headStart, value0) -> tail\n    {\n        tail := add(headStart, 32)\n        mstore(headStart, value0)\n    }\n}",
+      "id": 1,
+      "language": "Yul",
+      "name": "#utility.yul"
+    }
+  ],
+  "sourceMap": "57:152:0:-:0;;;114:2;90:26;;57:152;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "57:152:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;90:26;;;;;;;;;160:25:1;;;148:2;133:18;90:26:0;;;;;;",
+  "source": "// SPDX-License-Identifier: MIT \npragma solidity ^0.8.8;\ncontract CriminalDataSender{\n    uint public DataCount = 10 ;\n    struct Criminal_Entity{\n        uint id;\n        string name;\n uint cnic;\n    \n    }\n}",
+  "sourcePath": "/home/rogue/Desktop/FYP/THE-FYP/Block-Chain/contracts/CriminalDataSender.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/CriminalDataSender.sol",
+    "exportedSymbols": {
+      "CriminalDataSender": [
+        12
+      ]
+    },
+    "id": 13,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".8"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:0"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 12,
+        "linearizedBaseContracts": [
+          12
+        ],
+        "name": "CriminalDataSender",
+        "nameLocation": "66:18:0",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "functionSelector": "30e6e05c",
+            "id": 4,
+            "mutability": "mutable",
+            "name": "DataCount",
+            "nameLocation": "102:9:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 12,
+            "src": "90:26:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 2,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "90:4:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "hexValue": "3130",
+              "id": 3,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "114:2:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_10_by_1",
+                "typeString": "int_const 10"
+              },
+              "value": "10"
+            },
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "CriminalDataSender.Criminal_Entity",
+            "id": 11,
+            "members": [
+              {
+                "constant": false,
+                "id": 6,
+                "mutability": "mutable",
+                "name": "id",
+                "nameLocation": "160:2:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 11,
+                "src": "155:7:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 5,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "155:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 8,
+                "mutability": "mutable",
+                "name": "name",
+                "nameLocation": "179:4:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 11,
+                "src": "172:11:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 7,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "172:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 10,
+                "mutability": "mutable",
+                "name": "cnic",
+                "nameLocation": "191:4:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 11,
+                "src": "186:9:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 9,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "186:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "Criminal_Entity",
+            "nameLocation": "130:15:0",
+            "nodeType": "StructDefinition",
+            "scope": 12,
+            "src": "123:84:0",
+            "visibility": "public"
+          }
+        ],
+        "scope": 13,
+        "src": "57:152:0",
+        "usedErrors": []
+      }
+    ],
+    "src": "33:176:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.8+commit.dddeac2f.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xb54728eD20aD3714612Fa982416e9f80c30a68a2",
+      "transactionHash": "0x3235656e7d13421e358d71463a3626f6e3cc7e3be61d5d9de3b3b77297db5f90"
+    }
+  },
+  "schemaVersion": "3.4.16",
+  "updatedAt": "2024-03-06T04:37:15.610Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

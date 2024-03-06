@@ -1,0 +1,11 @@
+before to migrate a smart contract first we have to compile it using truffle 
+>>truffle compile 
+this will create a json representation  of the SC which will be stored in the builed directory of the contract
+..The next step is of migration which is done by creating a .js file in the migration directory of the project
+migration is actually changing the state of the blockchain 
+>>truffle migrate:
+this execute a funtion which is exported by the migration.js as module.export = function(deployer){
+}
+Migration is default contract which is used to keep track of status of other migrations 
+msg.sender refer to the address of the account that called the funtion
+we must interact with the block-chain in asynchronous fashion we cal also use  promises 
