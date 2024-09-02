@@ -1,0 +1,421 @@
+{
+	"compiler": {
+		"version": "0.8.19+commit.7dd6d404"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint16",
+						"name": "id",
+						"type": "uint16"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "enum CriminalDataSender.Sensitivity",
+						"name": "sensitivity",
+						"type": "uint8"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint32",
+						"name": "criminalCount",
+						"type": "uint32"
+					}
+				],
+				"name": "EntityCreated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint56",
+						"name": "cnic",
+						"type": "uint56"
+					}
+				],
+				"name": "EntityDeleted",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint56",
+						"name": "",
+						"type": "uint56"
+					}
+				],
+				"name": "cnicToID",
+				"outputs": [
+					{
+						"internalType": "uint56",
+						"name": "",
+						"type": "uint56"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint16",
+						"name": "_id",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint56",
+						"name": "_cnic",
+						"type": "uint56"
+					},
+					{
+						"internalType": "enum CriminalDataSender.Sensitivity",
+						"name": "sensitivity",
+						"type": "uint8"
+					}
+				],
+				"name": "createEntity",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "criminalCount",
+				"outputs": [
+					{
+						"internalType": "uint32",
+						"name": "",
+						"type": "uint32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint56",
+						"name": "",
+						"type": "uint56"
+					}
+				],
+				"name": "criminalData",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint16",
+						"name": "id",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint56",
+						"name": "cnic",
+						"type": "uint56"
+					},
+					{
+						"internalType": "enum CriminalDataSender.Sensitivity",
+						"name": "sensitivity",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "timeStamp",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "criminalIds",
+				"outputs": [
+					{
+						"internalType": "uint56",
+						"name": "",
+						"type": "uint56"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint56",
+						"name": "_cnic",
+						"type": "uint56"
+					}
+				],
+				"name": "deleteEntity",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getAllCriminals",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint16",
+								"name": "id",
+								"type": "uint16"
+							},
+							{
+								"internalType": "uint56",
+								"name": "cnic",
+								"type": "uint56"
+							},
+							{
+								"internalType": "enum CriminalDataSender.Sensitivity",
+								"name": "sensitivity",
+								"type": "uint8"
+							},
+							{
+								"internalType": "uint256",
+								"name": "timeStamp",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct CriminalDataSender.Entity[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint56",
+						"name": "_cnic",
+						"type": "uint56"
+					}
+				],
+				"name": "getEntity",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint16",
+								"name": "id",
+								"type": "uint16"
+							},
+							{
+								"internalType": "uint56",
+								"name": "cnic",
+								"type": "uint56"
+							},
+							{
+								"internalType": "enum CriminalDataSender.Sensitivity",
+								"name": "sensitivity",
+								"type": "uint8"
+							},
+							{
+								"internalType": "uint256",
+								"name": "timeStamp",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct CriminalDataSender.Entity",
+						"name": "",
+						"type": "tuple"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "this contract use NatSpec for documentation",
+			"events": {
+				"EntityCreated(uint16,address,uint8,uint32)": {
+					"params": {
+						"criminalCount": "Number of the criminals created",
+						"id": "id of the entity",
+						"owner": "The add of the contract owner",
+						"sensitivity": "Sensitivity of the criminal created"
+					}
+				}
+			},
+			"kind": "dev",
+			"methods": {
+				"constructor": {
+					"details": "Set the contract deployer as sender"
+				},
+				"createEntity(string,uint16,uint56,uint8)": {
+					"details": "Adds a new entity to the criminalData mapping and emit a EntityCreated update the cnicToId mapping and also push the current id to the criminlIds array",
+					"params": {
+						"_cnic": "Cnic of the entity",
+						"_id": "ID of the entity",
+						"_name": "The name of the entity",
+						"sensitivity": "Sensitivity of the entity"
+					}
+				},
+				"deleteEntity(uint56)": {
+					"details": "it first retrieve the corresponding id of the given cnic then iterates onn the whole criminalData mapping and delete the id specified id entity",
+					"params": {
+						"_cnic": "The cnic of the entity to be deleted"
+					}
+				},
+				"getAllCriminals()": {
+					"details": "Loops through the criminalIds array and retrieves only the non-deleted entities",
+					"returns": {
+						"_0": "allCriminals returns an array of all the active entities"
+					}
+				},
+				"getEntity(uint56)": {
+					"details": "It search for the criminal data in the criminalData mapping if find returns the enttity else return \"\"",
+					"params": {
+						"_cnic": "Cnic of the entity"
+					},
+					"returns": {
+						"_0": "criminalData Criminlal entity"
+					}
+				}
+			},
+			"stateVariables": {
+				"criminalIds": {
+					"details": "Arrays that will add in unsequential access to the criminals"
+				}
+			},
+			"title": "Criminal Data Sender Contract",
+			"version": 1
+		},
+		"userdoc": {
+			"events": {
+				"EntityCreated(uint16,address,uint8,uint32)": {
+					"notice": "Event emited when a new entity is created"
+				},
+				"EntityDeleted(uint56)": {
+					"notice": "Event emitted on Entity deletion"
+				}
+			},
+			"kind": "user",
+			"methods": {
+				"cnicToID(uint56)": {
+					"notice": "mapping from Cnic to id"
+				},
+				"constructor": {
+					"notice": "Constructor to set the owner of the contract"
+				},
+				"createEntity(string,uint16,uint56,uint8)": {
+					"notice": "Function to create a new entity"
+				},
+				"criminalCount()": {
+					"notice": "state variable to hold the criminal count"
+				},
+				"criminalData(uint56)": {
+					"notice": "mapping to hold the instance of the criminal"
+				},
+				"criminalIds(uint256)": {
+					"notice": "Array to hold the criminal Ids"
+				},
+				"deleteEntity(uint56)": {
+					"notice": "This function is used to deleted an entity"
+				},
+				"getAllCriminals()": {
+					"notice": "This is used to retrieve all the active entities stored in the mapping"
+				},
+				"getEntity(uint56)": {
+					"notice": "Function to return the entity data (can only be called by the owner)"
+				},
+				"owner()": {
+					"notice": "Address of the contract owner"
+				}
+			},
+			"notice": "this contract allow for creation , retrieval and deletion of the criminal data entries",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"CriminalDataSender.sol": "CriminalDataSender"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"CriminalDataSender.sol": {
+			"keccak256": "0xf1adf9de2b80df770f67d1e50afb1aec8e500dc70819efbe6cbb59937255bbd6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f44b0300529aba84cf752babc84e94561342f4390020980d48bab55275ac9ab1",
+				"dweb:/ipfs/QmbiAgzM2362c7YFZ8mEAjkAScjhzwU94aVauVTK89uqEF"
+			]
+		}
+	},
+	"version": 1
+}

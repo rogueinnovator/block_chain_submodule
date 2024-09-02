@@ -1,7 +1,5 @@
 [Desktop Entry]
 Name=Ganache
-Exec=/Desktop/Stuffs/ganache-2.7.1-linux-x86_64.AppImage
-Icon=/Desktop/FYP/ganache.png
+Exec=/Desktop/downloads/ganache-2.7.1-linux-x86_64.AppImage
 Type=Application
 Categories=Development;
-
