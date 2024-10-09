@@ -1,0 +1,29 @@
+{
+  "name": "criminal_data_provider",
+  "version": "1.0.0",
+  "description": "Blockchain criminal data storer",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && sexit 1",
+    "ganache": "ganache --wallet.seed myCustomSeed"
+  },
+  "author": "HUZAIFA",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.10",
+    "chai-as-promised": "^7.1.1",
+    "chai-bignumber": "^3.1.0",
+    "lite-server": "^2.6.1",
+    "nodemon": "^3.0.1",
+    "truffle": "^5.11.5",
+    "truffle-contract": "^4.0.31"
+  },
+  "dependencies": {
+    "solc": "^0.8.19",
+    "uws": "^200.0.0"
+  }
+}

@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Ganache
+Exec=/Desktop/downloads/ganache-2.7.1-linux-x86_64.AppImage
+Type=Application
+Categories=Development;
